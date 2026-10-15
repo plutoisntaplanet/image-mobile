@@ -12,8 +12,9 @@ licences are your responsibility.
 ## Features
 
 - Create: new image, edit image (up to 4 input images with roles), batch (locked + cycled inputs), draft sizes and a Finish pass to full size, optional speed LoRA and upscaler.
-- Gallery, History (every request can be reloaded or rerun), Library of tagged reference photos, Stories and lineups.
-- Language-model features (need `IMAGINE_LLM_URL`): Improve prompt, chat with picture suggestions, Meditate (a reviewer scores each picture and writes the next prompt or edit), grading, auto-labelling.
+- Gallery, History (every request can be reloaded or rerun), Library of tagged reference photos, Stories and lineups (experimental).
+- Language-model features (need `IMAGINE_LLM_URL`): Improve prompt, chat with picture suggestions, Meditate (experimental: a reviewer scores each picture and writes the next prompt or edit), grading, auto-labelling.
+- **Experimental:** Meditate, Stories and lineups work but are still changing; expect rough edges and changed behaviour between versions.
 - Profile mode: prompts, pictures, library, history and chats are sealed in the browser; the server stores only ciphertext.
 - Update button: saves unfinished work, restarts (if you set `IMAGINE_RESTART_CMD`) and resumes.
 

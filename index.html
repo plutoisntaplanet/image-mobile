@@ -605,6 +605,7 @@ body[data-tab="developer"] #compose{display:none}body[data-tab="developer"] #app
   <label>Show<select data-tidyshow="n"><option value="">all grades</option><option>A</option><option>B</option><option>C</option><option>D</option><option value="-">not graded</option></select></label>
   <button type="button" class="small ghost" data-tidyrv="n">🔍 Review one by one</button><button type="button" class="small ghost" data-trash="n" title="Deleted pictures wait here 12 hours: restore them or delete them for good">🗑 Trash</button><button type="button" class="small ghost" data-chats="n">💬 Chats</button><span class="note" data-tidymsg="n"></span></div></div>
 <div id="tab-stories" hidden>
+  <p class="note"><b>Experimental:</b> Stories and lineups are still changing; expect rough edges.</p>
   <div class="card">
     <div class="row">
       <div class="seg" id="storyHow"><button type="button" data-h="pics" class="on">🎞 Lineup</button><button type="button" data-h="ai">✍️ Write it for me</button><button type="button" data-h="me">📝 I'll write it</button></div>
@@ -666,6 +667,7 @@ body[data-tab="developer"] #compose{display:none}body[data-tab="developer"] #app
   </div>
 </div>
 <div id="tab-meditate" hidden>
+  <p class="note"><b>Experimental:</b> Meditate is still changing; expect rough edges.</p>
   <p class="sub">Meditation reviews a picture, writes a better prompt and draws it again, round after round, and keeps what it
     learns about prompting. Start one with 🧘 Meditate on any picture, or mark pictures for meditation hours.</p>
   <h3>Now</h3>
@@ -803,7 +805,7 @@ body[data-tab="developer"] #compose{display:none}body[data-tab="developer"] #app
     <div class="row"><label>Default size<select id="defaultSize"></select></label><label>Default shape<select id="defaultAspect"></select></label></div>
     <details id="finishDefaults"><summary>Finish defaults</summary><div id="finishDefaultFields" class="row"></div><button type="button" id="saveFinishDefaults">Save Finish defaults</button><span id="finishDefaultsStatus" role="status"></span></details>
   </section>
-  <section class="card"><h2>Meditation</h2><button type="button" id="settingsHours">Meditation hours, notebook and settings table</button><p class="note">Reset learned settings or delete notebook lessons below.<span class="pv"> Log in to your profile to enable these controls.</span></p><div id="resetSettings"></div><button type="button" class="ghost" id="notebookReset" hidden>Reset notebook</button><span id="resetStatus" role="status"></span></section>
+  <section class="card"><h2>Meditation <small>(experimental)</small></h2><button type="button" id="settingsHours">Meditation hours, notebook and settings table</button><p class="note">Reset learned settings or delete notebook lessons below.<span class="pv"> Log in to your profile to enable these controls.</span></p><div id="resetSettings"></div><button type="button" class="ghost" id="notebookReset" hidden>Reset notebook</button><span id="resetStatus" role="status"></span></section>
   <section class="card" id="privateSettings" hidden><h2>👤 Profile</h2><div class="row"><label><input type="checkbox" id="cacheOn" checked> Keep an encrypted cache on this device</label> <button type="button" class="ghost small" id="cacheClear">Clear cache now</button> <span class="note" id="cacheNote">Only the sealed boxes the server holds (never readable pictures); capped at 300 MB, unused entries expire after 14 days.</span></div></section>
   <section class="card" id="tidySettings"><h2>🧹 Grading</h2>
     <div class="row"><button type="button" id="tdGo">Grade the gallery now</button></div>
