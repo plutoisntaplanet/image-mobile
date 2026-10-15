@@ -1,0 +1,15 @@
+# systemd user unit: copy to ~/.config/systemd/user/imagine.service, adjust the paths, then
+#   systemctl --user daemon-reload && systemctl --user enable --now imagine
+[Unit]
+Description=Imagine web UI
+After=network-online.target
+
+[Service]
+WorkingDirectory=/path/to/imagine
+ExecStart=/usr/bin/python3 /path/to/imagine/server.py
+EnvironmentFile=%h/.config/imagine/engine.env
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
